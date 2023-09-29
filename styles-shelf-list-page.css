@@ -41,3 +41,20 @@ nav a {
     text-decoration: none;
     padding: 0rem 1.8rem;
 }
+
+h2 {
+    color: #3c4959;
+    padding-left: 5rem;
+}
+
+.package-post-its {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.package-post-its div {
+    padding: 1rem;
+    margin: 1rem;
+    border: 4px solid red;
+}
