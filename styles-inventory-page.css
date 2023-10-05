@@ -55,11 +55,13 @@ main {
 
 .inventory {
     width: 70%;
+    height: 55vh;
     margin-right: 1rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     font-size: 1.3rem;
+    overflow-y: scroll;
 }
 
 .inventory div {
@@ -74,6 +76,7 @@ main {
 
 .generated-list {
     width: 25%;
+    height: 55vh;
     text-align: center;
     font-size: 1.4rem;
     border-left: 2px solid #687C97;
@@ -96,6 +99,7 @@ h4 {
 
 .inventory button:active {
     transform: translateY(5px);
+    transition-duration: 0.2s;
     border-color: black;
     color: black;
 }
