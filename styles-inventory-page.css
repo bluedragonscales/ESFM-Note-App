@@ -56,7 +56,7 @@ main {
 .inventory {
     width: 70%;
     height: 55vh;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -75,11 +75,33 @@ main {
 }
 
 .generated-list {
-    width: 25%;
+    width: 28%;
     height: 55vh;
-    text-align: center;
-    font-size: 1.4rem;
     border-left: 2px solid #687C97;
+    overflow-y: scroll;
+}
+
+.generated-list ul {
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    padding-left: 10px;
+}
+
+ul button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+ul button:active {
+    background-color: #687C97;
+    transition-duration: 0.1s;
+}
+
+ul span {
+    display: inline-block;
+    float: right;
 }
 
 h4 {
@@ -111,7 +133,7 @@ h4 {
     border-right: none;
     padding-left: 40px;
     padding-right: 42px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .minus {
@@ -121,7 +143,7 @@ h4 {
     border-left: none;
     padding-right: 40px;
     padding-left: 42px;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 i {
