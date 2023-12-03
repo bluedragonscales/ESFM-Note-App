@@ -58,7 +58,7 @@ td:nth-child(4n) {
 .add-note-btn {
     position: fixed;
     right: 0;
-    margin-left: 10px;
+    margin-left: 1rem;
     margin-top: 10px;
 }
 
@@ -71,12 +71,11 @@ td:nth-child(4n) {
     border-radius: 5px;
 }
 
-.notes-page div {
-    width: 40rem;
+.notes-page canvas {
+    width: 22rem;
     height: 30rem;
     border: 2px solid #B5D797;
     border-radius: 5px;
-    margin-right: 2.5rem;
     margin-left: 15px;
     margin-top: 2rem;
 }
@@ -85,4 +84,15 @@ td:nth-child(4n) {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+}
+
+.notes-page button {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 0;
+    color: white;
+    background-color: #313e25;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
