@@ -39,4 +39,18 @@ th:nth-child(2), th:nth-child(3) {
 
 td:nth-child(4n) {
     text-align: right;
+    font-size: 1.6rem;
+}
+
+.reset-button {
+    display: flex;
+    margin: auto;
+    color: white;
+    background-color: #313e25;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
