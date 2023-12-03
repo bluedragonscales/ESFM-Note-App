@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
     font-family: 'Courier Prime', monospace;
+}
+
+.topmost-section,.home-page {
+    text-align: center;
 }
 
 .topmost-section img {
@@ -10,7 +13,9 @@
 }
 
 .topmost-section h1 {
+    margin-bottom: 10px;
     font-weight: 100;
+    font-size: 1.2rem;
 }
 
 .topmost-section nav {
@@ -27,10 +32,18 @@ nav a {
     padding: 3px;
 }
 
-.homepage a {
+.home-page {
+    margin: 1rem 2rem;
+}
+
+.home-page a {
     margin-top: 5px;
 }
 
-.homepage p {
-    margin-bottom: 1rem;
+.home-page p {
+    margin-bottom: 2rem;
+}
+
+hr {
+    background-color: #B5D797;
 }
