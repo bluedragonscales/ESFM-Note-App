@@ -1,5 +1,8 @@
-.topmost-section {
+* {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-family: 'Courier Prime', monospace;
 }
 
 .topmost-section img {
@@ -12,4 +15,22 @@
 
 .topmost-section nav {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding: 3px;
+}
+
+.homepage a {
+    margin-top: 5px;
+}
+
+.homepage p {
+    margin-bottom: 1rem;
 }
