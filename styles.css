@@ -71,26 +71,38 @@ td:nth-child(4n) {
     border-radius: 5px;
 }
 
-.notes-page canvas {
-    width: 22rem;
-    height: 30rem;
-    border: 2px solid #B5D797;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-top: 2rem;
-}
-
 .notes-page {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
 }
 
+.notes-page div {
+    display: flex;
+    flex-flow: column;
+}
+
+.notes-page canvas {
+    position: relative;
+    width: 22rem;
+    height: 30rem;
+    border: 2px solid #B5D797;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 15px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 .notes-page button {
-    position: absolute;
     height: 2rem;
-    width: 2rem;
+    width: 96.5%;
     margin-top: 0;
+    margin-left: 14px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: white;
     background-color: #313e25;
     font-size: 1.5rem;

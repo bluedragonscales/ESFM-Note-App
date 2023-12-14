@@ -15,6 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Some CSS styling */
+        #sketchpadapp {
+            /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+
     <title>ESFM Office & Mailroom - Taking Notes</title>
 </head>
 <body>
@@ -50,41 +64,36 @@
     </aside>
 
     <main class="notes-page">
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
+        <div>
+            <canvas id="sketchpad"></canvas>
+            <button onclick="clearCanvas(canvas,ctx);">X</button>
+        </div>
     
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
+        <div>
+            <canvas></canvas>
+            <button onclick="clearCanvas(canvas,ctx);">X</button>
+        </div>
 
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
-
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
-    
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
-
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
-
-        <canvas>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique tenetur ullam sed perferendis earum blanditiis fugiat vel cum! Minus commodi repellat in doloremque illum consequatur asperiores totam vero eaque?</p>
-            <button>X</button>
-        </canvas>
+        <div>
+            <canvas></canvas>
+            <button onclick="clearCanvas(canvas,ctx);">X</button>
+        </div>
     </main>
+
+    <!-- <div id="sketchpadapp">
+        <div class="leftside1">
+             
+
+             <input type="submit" value="Clear Sketchpad" onclick="clearCanvas(canvas,ctx);">
+        </div>
+        <div class="rightside">
+            <canvas id="sketchpad" height="300" width="400">
+            </canvas>
+        </div>
+    </div> -->
     
 </body>
+
+<script src="scripts/all-scripts.js"></script>
+
 </html>
