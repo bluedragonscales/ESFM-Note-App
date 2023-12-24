@@ -15,23 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- INTERNAL CSS -->
-    <style>
-        /* Some CSS styling */
-        #sketchpadapp {
-            /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-    </style>
-
     <title>ESFM Office & Mailroom - Taking Notes</title>
 </head>
-<body>
+<body onload="init()">
 
     <section class="topmost-section">
         <header>
@@ -63,19 +49,10 @@
         </button>
     </aside>
 
-    <main class="notes-page">
-        <div>
-            <canvas id="sketchpad"></canvas>
-            <button onclick="clearCanvas(canvas,ctx);">X</button>
-        </div>
     
-        <div>
-            <canvas></canvas>
-            <button onclick="clearCanvas(canvas,ctx);">X</button>
-        </div>
-
-        <div>
-            <canvas></canvas>
+    <main class="notes-page">
+        <div id="sketchpadapp">
+            <canvas id="sketchpad"></canvas>
             <button onclick="clearCanvas(canvas,ctx);">X</button>
         </div>
     </main>
