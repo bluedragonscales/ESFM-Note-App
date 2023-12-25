@@ -98,7 +98,7 @@ td:nth-child(4n) {
 
 .notes-page button {
     height: 2rem;
-    width: 96.5%;
+    width: inherit;
     margin-top: 0;
     margin-left: 14px;
     border-bottom-left-radius: 5px;
@@ -110,8 +110,40 @@ td:nth-child(4n) {
 }
 
 .modal {
-    width: 95%;
-    height: 40rem;
-    border: 2px solid black;
-    background-color: lightblue;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal canvas {
+    position: relative;
+    background-image: url('../note-paper-background.png');
+    width: 96vw;
+    height: 92vh;
+    border: 2px solid #B5D797;
+    margin: 0 5px;
+}
+
+.model-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.model-btns button {
+    height: 3rem;
+    width: 49vw;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: #313e25;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
