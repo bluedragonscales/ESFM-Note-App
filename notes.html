@@ -36,7 +36,7 @@
 
 
     <aside class="add-note-btn">
-        <button>
+        <button id="addNoteBtn" onclick="openModal()">
             <p>A</p>
             <p>D</p>
             <p>D</p>
@@ -50,23 +50,20 @@
 
     
     <main class="notes-page">
-        <div id="sketchpadapp">
-            <canvas id="sketchpad"></canvas>
-            <button onclick="clearCanvas(canvas,ctx);">X</button>
+        <div>
+            <canvas></canvas>
+            <button>X</button>
         </div>
     </main>
 
-    <!-- <div id="sketchpadapp">
-        <div class="leftside1">
-             
 
-             <input type="submit" value="Clear Sketchpad" onclick="clearCanvas(canvas,ctx);">
+    <div id="simpleModal" class="modal">
+        <div>
+            <canvas></canvas>
+            <button>Save</button>
+            <button>Delete</button>
         </div>
-        <div class="rightside">
-            <canvas id="sketchpad" height="300" width="400">
-            </canvas>
-        </div>
-    </div> -->
+    </div>
     
 </body>
 
