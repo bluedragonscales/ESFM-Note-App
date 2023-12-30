@@ -1,10 +1,27 @@
 // INVENTORY PAGE
 // Use the plus and minus buttons to tick numbers in the quantity column.
 // Use the "Reset Button" button at the bottom to bring all numbers in the Quantity column to zero.
-let plusBtn = document.getElementById('plus');
+let plusButtons = document.querySelectorAll('#plus');
 let minusBtn = document.getElementById('minus');
+let tableBody = document.getElementById('tableBody');
+let quants = tableBody.querySelectorAll('td:nth-child(4n)');
 
 
+for(i of plusButtons) {
+    i.addEventListener('click', function() {
+        console.log(this);
+        console.log(this.innerHTML);
+        console.log(quants);
+    });
+};
+
+
+
+function resetList() {
+    for(let i = 0; i < 24; i++) {
+        quants[i].innerHTML = 0;
+    };
+};
 
 // NOTES PAGE
 // The "Add-Note" button will add a new note. A canvas box will pop-up and you can use your finger
